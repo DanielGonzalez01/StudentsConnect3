@@ -1,36 +1,16 @@
-.myprogram {
-  text-align: center;
-  width: 100%;
-   height: 300px;
-}
-#myDiv  {
-    border: 5px outset white;
-    background-color: white;
-   border-style: dotted;
-   
-  }
-  #myDiv2 {
-    border: 5px outset white;
-    background-color: white;
-   
-   border-style: dashed;
-   
-  }
-  #myDiv3 {
-    border: 5px outset white;
-    background-color: white;
-   border-style: dotted;
-   
-  }
 
-  div.scroll { 
-    margin:4px, 4px; 
-    padding:4px; 
-    background-color:  white; 
-    width: 500px; 
-    height: 110px; 
-    overflow-x: hidden; 
-    overflow: scroll;
-    overflow-y: auto; 
-    text-align:justify; 
-} 
+
+.horizontal {
+  ion-card {
+    display: inline-block;
+        width: 130px; 
+  }
+ }
+ .horizontal2 {
+  ion-card {
+    display: inline-block;
+        width: 130px; 
+  }
+ }
+  
+ 

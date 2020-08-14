@@ -7,10 +7,7 @@ import { Component } from '@angular/core';
 })
 export class FeedPage {
  private icons = [
-   'TxT',
-   'Minds Matter',
-   'Favian',
-   'Adelmo'
+   
  ];
  public items: Array<{ title: string; icon: string }> = [];
  public allItems: Array<{ title: string; icon: string }> = [];

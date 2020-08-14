@@ -1,28 +1,64 @@
 <ion-header>
-  <ion-toolbar color="tertiary">
-   <ion-title>Students Connect</ion-title>
-  </ion-toolbar>
- </ion-header>
- <ion-content padding>
-  <ion-searchbar (ionChange)= "onSearchTerm($event)"  placeholder="Search an item"></ion-searchbar>
-  <ion-list>
-    <div *ngIf="items.length > 0; else noItems">
-      <ion-item *ngFor="let item of items">
-        <ion-icon [name]="item.icon" slot="start"></ion-icon>
-        {{item.title}}
-        <div class="item-note" slot="end">
-          {{item.note}}
-        </div>
-      </ion-item>
-    </div>
-    <ng-template #noItems>
-      <ion-item>
-        No items have been found.
-      </ion-item>
-    </ng-template>
-  </ion-list>
+ <ion-toolbar color="tertiary">
+  <ion-title>Students Connect</ion-title>
+ </ion-toolbar>
+</ion-header>
+<ion-content padding>
+ <ion-searchbar (ionChange)="onSearchTerm($event)" placeholder="Search an item"></ion-searchbar>
+ <ion-list>
+   <div *ngIf="items.length > 0; else noItems">
+     <ion-item *ngFor="let item of items">
+       <ion-icon [name]="item.icon" slot="start"></ion-icon>
+       {{item.title}}
+       {{item.desc}}
+       <div class="item-note" slot="end">
+         {{item.note}}
+       </div>
+     </ion-item>
+   </div>
+   <ng-template #noItems>
+     <ion-item>
+       No items found.
+     </ion-item>
+   </ng-template>
+ </ion-list>
+ <div class=horizontal>
+   <ion-card color="secondary">
+     <ion-card-header>
+       <ion-card-title class="title1">MITES</ion-card-title>
+      
+     </ion-card-header>
+  
+     <ion-card-content>
+      FREE six week summer residential program for rising high school seniors--from underrepresented and underserved communities--who are interested in pursuing careers in STEM.
+     </ion-card-content>
+   </ion-card>
+   <ion-card color="success">
+     <ion-card-header>
+       <ion-card-title>LEDA</ion-card-title>
+       
+     </ion-card-header>
+  
+     
+   </ion-card>
+ </div>
+ <div class=horizontal>
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-title class="title1">RSI</ion-card-title>
+      
+    </ion-card-header>
+ 
+   
+  </ion-card>
+  <ion-card color="danger">
+    <ion-card-header>
+      <ion-card-title>Questbridge</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</div>
  </ion-content>
-  
-  
+ 
+ 
  
  
